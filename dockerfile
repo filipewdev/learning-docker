@@ -1,6 +1,9 @@
 # Official Python runtime
 FROM python:3.12-rc-bookworm
 
+# Volumes can be added via dockerfile, however docker will attach a random name to it
+# VOLUME /app/data
+
 # Set the working directory to /app
 WORKDIR /app
 
